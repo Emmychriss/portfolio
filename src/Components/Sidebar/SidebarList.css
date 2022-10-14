@@ -9,3 +9,25 @@
   object-fit: cover;
   border: 2px solid yellowgreen;
 }
+
+.nav-items ul li {
+  color: white;
+  list-style: none;
+  cursor: pointer;
+  margin-top: 25px;
+}
+
+.nav-items ul li svg {
+  margin-left: 10px;
+  margin-right: 25px;
+}
+
+.navItems-iconsOnly {
+  margin-top: 10px;
+  cursor: pointer;
+  list-style: none;
+}
+
+.navItems-iconsOnly svg {
+  margin-left: 10px;
+}
