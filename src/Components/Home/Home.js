@@ -1,5 +1,6 @@
 import "./Home.css";
 import Typewritter from "typewriter-effect";
+import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf"
 
 const Home = () => {
   return (
@@ -19,6 +20,14 @@ const Home = () => {
             }}
           />
         </h2>
+        <div className="action-button">
+          <div className="hire-me-btn">Hire Me</div>
+          <div className="getResume-btn">
+            <a href={myCV} download="Nduka_Emma_CV">
+              Get My Resume
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   );
