@@ -1,7 +1,7 @@
 .home {
   height: 400px;
   color: white;
-  margin-left: 125px;
+  margin-left: 200px;
 }
 
 .home-content {
@@ -9,7 +9,56 @@
   margin-top: 120px;
 }
 
-.home-content h2{
+.home-content h2 {
   margin-top: 20px;
   color: yellowgreen;
+}
+
+.action-button {
+  display: flex;
+}
+
+.hire-me-btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #ff8546;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.hire-me-btn:hover {
+  background-color: #f5f5f5ef;
+  width: 200px;
+  color: #ff8546;
+  transition: 0.3s;
+  border: 1px solid #ff8546;
+}
+
+.getResume-btn {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+  width: 180px;
+  padding: 10px;
+  border-radius: 90px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 12px;
+  border: 2px solid yellowgreen;
+  font-size: 18px;
+}
+
+.getResume-btn:hover {
+  width: 200px;
+  color: #ff8546;
+  transition: 0.3s;
+  border: 1px solid white;
+}
+
+.getResume-btn a {
+  text-decoration: none;
+  color: #ff8546;
 }
