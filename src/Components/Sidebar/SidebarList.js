@@ -1,5 +1,5 @@
 import "./SidebarList.css";
-import profilePic from "../../Images/emmy.jpg";
+import profilePic from "../../assets/Images/emmy.jpg";
 
 import {
   FcHome,
