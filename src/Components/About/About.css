@@ -1,0 +1,33 @@
+.about-section {
+  margin-left: 300px;
+  margin-top: 50px;
+  height: 400px;
+
+  -webkit-box-shadow: 5px 5px 15px 0px rgba(94, 89, 89, 0.75);
+  -moz-box-shadow: 5px 5px 15px 0px rgba(94, 89, 89, 0.75);
+  box-shadow: 5px 5px 15px 0px rgba(94, 89, 89, 0.75);
+}
+
+.about-image img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 30px;
+}
+
+.about-details {
+  margin-top: 30px;
+}
+
+.about-title h5 {
+  text-align: center;
+}
+
+.line {
+  display: block;
+  width: 70px;
+  height: 2px;
+  margin: 1px auto;
+  background-color: black;
+}
