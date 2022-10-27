@@ -1,6 +1,6 @@
 import "./Home.css";
 import Typewritter from "typewriter-effect";
-import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf"
+import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf";
 
 const Home = () => {
   return (
