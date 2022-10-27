@@ -1,0 +1,31 @@
+.techStack-section {
+  margin-left: 300px;
+  margin-top: 50px;
+  height: auto;
+}
+
+.techStack-title {
+  text-align: center;
+}
+
+.techStack-content {
+  margin-top: 50px;
+  padding: 10px;
+
+  -webkit-box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
+}
+
+.techStack-content p {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: 700;
+}
+
+.techStack-content:hover {
+  background-color: var(--bs-secondary);
+  color: white;
+  cursor: pointer;
+  transition: 1s;
+}
