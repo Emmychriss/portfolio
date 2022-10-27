@@ -19,9 +19,13 @@ const About = () => {
               <span className="line"></span>
             </div>
             <p>
-              Text about me should all be contained here. Text about me should
-              all be contained here.Text about me should all be contained here.
-              Text about me should all be contained here.
+              I'm a software engineer with fresh experience in developing web
+              applications for specific use cases and a few months of training
+              in a variety of domains and tech-stacks. I have significant
+              experience working with Javascript and frameworks like ReactJS,
+              jQuery, signalR framework and other languages. I'm a developer who
+              aspire to build the necessary skillset for the mastery of MERN
+              stack in my development career. NodeJs).
             </p>
           </div>
         </div>
