@@ -25,7 +25,7 @@ const About = () => {
               experience working with Javascript and frameworks like ReactJS,
               jQuery, signalR framework and other languages. I'm a developer who
               aspire to build the necessary skillset for the mastery of MERN
-              stack in my development career. NodeJs).
+              stack in my development career.
             </p>
           </div>
         </div>
