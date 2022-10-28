@@ -1,3 +1,4 @@
+import { useState } from "react";
 import "./TechStack.css";
 
 const TechStack = () => {
@@ -42,7 +43,21 @@ const TechStack = () => {
       name: "Mongo Db",
       color: "#306B3B",
     },
+    {
+      name: "Firebase",
+      color: "#B7950B",
+    },
+    {
+      name: "Git",
+      color: "#AF7AC5",
+    },
   ];
+
+  const [loadMoreTechStack, setLoadMoreTechStack] = useState(6);
+
+  const loadMore = () => {
+    setLoadMoreTechStack((prev) => prev + 3);
+  };
 
   return (
     <div className="container techStack-section">
@@ -52,7 +67,7 @@ const TechStack = () => {
       </div>
 
       <div className="row">
-        {data.map((item, index, arr) => {
+        {data.slice(0, loadMoreTechStack).map((item, index, arr) => {
           return (
             <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
               <div className="techStack-content">
@@ -68,6 +83,12 @@ const TechStack = () => {
           );
         })}
       </div>
+
+      {loadMoreTechStack >= data.length ? null : (
+        <span className="techStack-loadMore" onClick={loadMore}>
+          Load More
+        </span>
+      )}
     </div>
   );
 };
