@@ -14,6 +14,7 @@ const Home = () => {
                 "Software Engineer",
                 "Tech Enthusiast",
                 "Resourceful Youth",
+                "Problem Solver",
               ],
               autoStart: true,
               loop: true,
