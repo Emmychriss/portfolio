@@ -21,6 +21,10 @@
   margin-right: 150px;
 }
 
+.about-details p {
+  text-align: justify;
+}
+
 .about-title h5 {
   text-align: center;
 }
