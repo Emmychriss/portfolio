@@ -8,6 +8,23 @@
   box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
 }
 
+.about-section:hover {
+  animation: bump 300ms ease-out;
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
 .about-image img {
   height: 250px;
   width: 250px;
