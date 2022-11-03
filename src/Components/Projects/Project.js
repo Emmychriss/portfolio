@@ -1,10 +1,12 @@
 import "./Project.css";
+import ProjectList from "./ProjectList";
 
 const Project = () => {
   const data = [
     {
       name: "Swift Bank App",
-      description: "A simple bank app for transfer and receival of amounts",
+      description:
+        "A dummy simple bank app for transfer and receival of amounts(figures)",
       projectLink: "",
       techUsed: [
         {
@@ -23,7 +25,7 @@ const Project = () => {
     },
 
     {
-      name: "Insta clone app",
+      name: "Insta-Clone App",
       description: "This is a simple Instagram clone application",
       projectLink: "",
       techUsed: [
@@ -43,13 +45,32 @@ const Project = () => {
     },
 
     {
-      name: "Swift Bank App",
-      description: "A simple bank app for transfer and receival of amounts",
+      name: "Burger Builder Project",
+      description:
+        "A Web Application built for users to specify how they want thier burger to be before purchase",
       projectLink: "",
       techUsed: [
         {
-          techName: "Firebase",
+          techName: "ReactJS",
         },
+        {
+          techName: "Javascript",
+        },
+        {
+          techName: "CSS",
+        },
+        {
+          techName: "Mongo Db",
+        },
+      ],
+    },
+
+    {
+      name: "Bank App Marketing",
+      description:
+        "A  marketing website for the simple bank app created for transfer and receival of cash",
+      projectLink: "",
+      techUsed: [
         {
           techName: "Html",
         },
@@ -63,8 +84,9 @@ const Project = () => {
     },
 
     {
-      name: "Insta clone app",
-      description: "This is a simple Instagram clone application",
+      name: "Food Order App",
+      description:
+        "This is a dummy application that enables users to select from available foods before ordering",
       projectLink: "",
       techUsed: [
         {
@@ -78,6 +100,27 @@ const Project = () => {
         },
         {
           techName: "next JS",
+        },
+      ],
+    },
+
+    {
+      name: "Portfolio Project",
+      description:
+        "My very own portfolio project inclusive is part of projects which have been up my sleeve!",
+      projectLink: "",
+      techUsed: [
+        {
+          techName: "ReactJS",
+        },
+        {
+          techName: "Javascript",
+        },
+        {
+          techName: "CSS",
+        },
+        {
+          techName: "Node JS",
         },
       ],
     },
@@ -91,10 +134,10 @@ const Project = () => {
       </div>
 
       <div className="row">
-        {data.map((item) => {
+        {data.map((item, index, arr) => {
           return (
-            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12">
-              {item.name}
+            <div className="col-xl-6 col-lg-6 col-md-6 col-sm-12" key={index}>
+              <ProjectList {...item} />
             </div>
           );
         })}
