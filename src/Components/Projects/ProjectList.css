@@ -15,8 +15,29 @@
   transition: 0.2s;
 }
 
+.projectList-active {
+  border-left: 5px solid #616a6b;
+}
+
+.projectList-active:hover {
+  animation: bump 300ms ease-in;
+}
+
+@keyframes bump {
+  0% {
+  }
+
+  50% {
+    transform: scale(1.02);
+  }
+
+  100% {
+  }
+}
+
 .description {
   margin: 5px;
+  transition: 1s;
 }
 
 .title-and-CollapseBtn {
