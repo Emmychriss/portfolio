@@ -27,7 +27,7 @@ const WorkExperience = () => {
         },
       ],
       year: "2019-2020",
-      color: "#EB984E",
+      color: "#E67E24",
     },
 
     {
@@ -78,28 +78,42 @@ const WorkExperience = () => {
         <span className="line"></span>
       </div>
 
-      <VerticalTimeline>
+      <VerticalTimeline lineColor="black">
         {data.map((item, index, arr) => {
           return (
             <VerticalTimelineElement
               className="vertical-timeline-element--work"
               contentStyle={{ background: item.color, color: "#fff" }}
               contentArrowStyle={{
-                borderRight: "7px solid  rgb(33, 150, 243)",
+                borderRight: `8px solid ${item.color}`,
               }}
-              date="2011 - present"
+              date={item.year}
+              dateClassName="dateClass"
               iconStyle={{ background: item.color, color: "#fff" }}
               icon={<MdGroupWork />}
               key={index}
             >
               <h3 className="vertical-timeline-element-title">
-                Creative Director
+                {item.orgName}
               </h3>
-              <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-              <p>
-                Creative Direction, User Experience, Visual Design, Project
-                Management, Team Leading
-              </p>
+              <h5 className="vertical-timeline-element-subtitle">
+                {item.position}
+              </h5>
+              <div className="row">
+                {item.techSkills.map((techSkill, index, arr) => {
+                  return (
+                    <div
+                      className="col-xl-4 col-lg-4 col-md-6 col-sm-12"
+                      key={index}
+                    >
+                      <div className="techSkills">
+                        <p>{techSkill.techName}</p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+              <p>{item.description}</p>
             </VerticalTimelineElement>
           );
         })}
