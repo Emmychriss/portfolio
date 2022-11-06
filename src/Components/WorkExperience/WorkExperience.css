@@ -4,6 +4,27 @@
   margin-bottom: 50px;
 }
 
+.workExperience-title {
+  margin-bottom: 50px;
+}
+
 .workExperience-title h5 {
   text-align: center;
+}
+
+.techSkills p {
+  background-color: #282828;
+  border-radius: 90px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.techSkills p:hover {
+  background-color: #202020;
+  cursor: pointer;
+}
+
+.dateClass {
+  color: black ;
 }
