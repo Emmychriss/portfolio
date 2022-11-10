@@ -4,71 +4,74 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+import testImg from "../../assets/Images/profileIcon.svg";
+
 const Testimonial = () => {
   const data = [
     {
       name: "Esther Nduka",
       position: "Data analyst and SQL pro.",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Noel Emmanuel",
       position: "Front-end developer and UI/UX",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Ayinla Omokeji",
       position: "Full stack developer",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Habeeb",
       position: "Back-end engineer",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Ayomide Giwa",
       position: "Computer software solutions",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Samson",
       position: "Accountant",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Christy Ifeoma",
       position: "Accountant",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Ezekiel Mcfadipe",
       position: "software solutions",
       description: "",
-      image: "",
+      image: testImg,
     },
     {
       name: "Kolawole Adeboyejo",
       position: "",
       description: "",
-      image: "",
+      image: testImg,
     },
   ];
 
-  var settings = {
+  let settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
+    autoplay: true,
     speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 4,
-    initialSlide: 0,
+    autoplaySpeed: 5000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
     responsive: [
       {
         breakpoint: 1024,
@@ -108,12 +111,17 @@ const Testimonial = () => {
         <Slider {...settings}>
           {data.map((item, index, arr) => {
             return (
-              <div className="slider-content" key={index}>
-                <img
-                  src={item.image}
-                  alt="Testimonial Pic"
-                  className="centerImage "
-                ></img>
+              <div>
+                <div className="slider-content" key={index}>
+                  <img
+                    src={item.image}
+                    alt="Testimonial Pic"
+                    className="centerImage "
+                  ></img>
+                  <p>{item.description}</p>
+                  <p>{item.name}</p>
+                  <p>{item.position}</p>
+                </div>
               </div>
             );
           })}
