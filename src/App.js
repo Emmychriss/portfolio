@@ -7,6 +7,7 @@ import Project from "./Components/Projects/Project";
 import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
+import Contact from "./Components/Contact/Contact";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Education />
       <Project />
       <Testimonial />
+      <Contact />
     </div>
   );
 }
