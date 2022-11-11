@@ -1,7 +1,7 @@
 .testimonial-section {
   margin-left: 300px;
   margin-bottom: 50px;
-  height: 80vh;
+  height: 40vh;
 }
 
 .testimonial-title {
@@ -20,8 +20,8 @@
   border-radius: 5px;
 }
 
-.slider-content:hover{
-  background-color: #7FB3D5;
+.slider-content:hover {
+  background-color: #7fb3d5;
   transition: 1s;
 }
 
