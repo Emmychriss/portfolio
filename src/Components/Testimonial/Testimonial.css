@@ -16,8 +16,13 @@
   margin-top: 50px;
   text-align: center;
   cursor: pointer;
-  height: 250px;
+  height: 220px;
   border-radius: 5px;
+}
+
+.slider-content:hover{
+  background-color: #7FB3D5;
+  transition: 1s;
 }
 
 .slider-content img {
@@ -30,4 +35,12 @@
   margin-top: -30px;
   justify-content: center;
   align-items: center;
+}
+
+.slick-prev:before {
+  color: var(--bs-cyan) !important;
+}
+
+.slick-next:before {
+  color: var(--bs-cyan) !important;
 }
