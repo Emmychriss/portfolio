@@ -15,12 +15,6 @@ const Testimonial = () => {
       image: testImg,
     },
     {
-      name: "Noel Emmanuel",
-      position: "Front-end developer and UI/UX",
-      description: "",
-      image: testImg,
-    },
-    {
       name: "Ayinla Omokeji",
       position: "Full stack developer",
       description: "",
@@ -29,6 +23,12 @@ const Testimonial = () => {
     {
       name: "Habeeb",
       position: "Back-end engineer",
+      description: "",
+      image: testImg,
+    },
+    {
+      name: "Noel Emmanuel",
+      position: "Front-end developer and UI/UX",
       description: "",
       image: testImg,
     },
@@ -46,7 +46,7 @@ const Testimonial = () => {
     },
     {
       name: "Christy Ifeoma",
-      position: "Accountant",
+      position: "project manager and content creator",
       description: "",
       image: testImg,
     },
@@ -118,9 +118,9 @@ const Testimonial = () => {
                     alt="Testimonial Pic"
                     className="centerImage "
                   ></img>
-                  <p>{item.description}</p>
                   <p>{item.name}</p>
                   <p>{item.position}</p>
+                  <p>{item.description}</p>
                 </div>
               </div>
             );
