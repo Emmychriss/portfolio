@@ -49,7 +49,7 @@ const Contact = () => {
                 <textarea
                   type="text"
                   className="form-control"
-                  rows="4"
+                  rows="3"
                 ></textarea>
               </div>
 
