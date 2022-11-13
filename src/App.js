@@ -9,6 +9,8 @@ import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
 
+import ScrollToTop from "react-scroll-to-top";
+
 function App() {
   return (
     <div className="App">
@@ -20,6 +22,14 @@ function App() {
       <Project />
       <Testimonial />
       <Contact />
+
+      <ScrollToTop
+        smooth="true"
+        height="20"
+        width="20"
+        color="white"
+        style={{ backgroundColor: "#282828" }}
+      />
     </div>
   );
 }
