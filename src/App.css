@@ -1,6 +1,10 @@
 ::-webkit-scrollbar {
-  width: 8px;
+  width: 5px;
   height: auto;
+}
+
+::-webkit-scrollbar:hover {
+  width: 7px;
 }
 
 ::-webkit-scrollbar-track {
