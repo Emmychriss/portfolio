@@ -72,7 +72,7 @@ const WorkExperience = () => {
   ];
 
   return (
-    <div className="container workExperience-section">
+    <div className="container workExperience-section" id="workExperience">
       <div className="workExperience-title">
         <h5>Work Experience</h5>
         <span className="line"></span>

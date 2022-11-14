@@ -127,7 +127,7 @@ const Project = () => {
   ];
 
   return (
-    <div className="container project-section">
+    <div className="container project-section" id="projects">
       <div className="techStack-title">
         <h5>Projects</h5>
         <span className="line"></span>

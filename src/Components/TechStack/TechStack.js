@@ -60,7 +60,7 @@ const TechStack = () => {
   };
 
   return (
-    <div className="container techStack-section">
+    <div className="container techStack-section" id="techStack">
       <div className="techStack-title">
         <h5>Tech Stack</h5>
         <span className="line"></span>

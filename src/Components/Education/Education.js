@@ -29,7 +29,7 @@ const Education = () => {
   ];
 
   return (
-    <div className="container education-section">
+    <div className="container education-section" id="education">
       <div className="education-title">
         <h5>Education</h5>
         <span className="line"></span>

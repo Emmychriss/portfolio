@@ -4,7 +4,7 @@ import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf";
 
 const Home = () => {
   return (
-    <div className="container-fluid home">
+    <div className="container-fluid home" id="home">
       <div className="container home-content">
         <h1>Hi, I'm a </h1>
         <h2>
