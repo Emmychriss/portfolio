@@ -117,28 +117,92 @@ const SidebarList = (props) => {
         <div className="navItems-iconsOnly">
           <ul>
             <li className="nav-item">
-              <FcHome size={25} />
+              <Link
+                to="home"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+              >
+                <FcHome size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcAbout size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="about"
+              >
+                <FcAbout size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcAcceptDatabase size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="workExperience"
+              >
+                <FcAcceptDatabase size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcBiotech size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="techStack"
+              >
+                <FcBiotech size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcGraduationCap size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="education"
+              >
+                <FcGraduationCap size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcIdea size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="projects"
+              >
+                <FcIdea size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcBarChart size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={100}
+                to="testimonial"
+              >
+                <FcBarChart size={25} />
+              </Link>
             </li>
             <li className="nav-item">
-              <FcContacts size={25} />
+              <Link
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={100}
+                to="contact"
+              >
+                <FcContacts size={25} />
+              </Link>
             </li>
           </ul>
         </div>
