@@ -62,3 +62,9 @@
   text-decoration: none;
   color: #ff8546;
 }
+
+@media (max-width: 1023px) {
+  .home {
+    margin-left: 0;
+  }
+}
