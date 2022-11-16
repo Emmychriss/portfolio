@@ -8,12 +8,15 @@ import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
+import NavbarMobileView from "./Components/Sidebar/Navbar-Mobileview";
 
 import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <div className="App">
+      <NavbarMobileView />
+
       <Sidebar />
       <About />
       <WorkExperience />
