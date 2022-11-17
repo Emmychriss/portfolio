@@ -111,8 +111,8 @@ const Testimonial = () => {
         <Slider {...settings}>
           {data.map((item, index, arr) => {
             return (
-              <div>
-                <div className="slider-content" key={index}>
+              <div key={index}>
+                <div className="slider-content">
                   <img
                     src={item.image}
                     alt="Testimonial Pic"
