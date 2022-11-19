@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 ::-webkit-scrollbar {
   width: 5px;
   height: auto;
@@ -18,4 +22,10 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #883914;
+}
+
+@media (max-width: 1023px) {
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
