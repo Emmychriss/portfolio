@@ -59,4 +59,8 @@
   .about-section {
     margin-left: 0;
   }
+
+  .about-details {
+    margin-right: 0;
+  }
 }
