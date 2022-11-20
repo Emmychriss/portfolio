@@ -44,3 +44,17 @@
 .slick-next:before {
   color: var(--bs-cyan) !important;
 }
+
+@media (max-width: 1023px) {
+  .testimonial-section {
+    margin-left: 0;
+  }
+
+  .slick-prev:before {
+    display: none;
+  }
+
+  .slick-next:before {
+    display: none;
+  }
+}
