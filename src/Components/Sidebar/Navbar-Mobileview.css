@@ -1,0 +1,69 @@
+.navbar-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  color: white;
+  background-color: #e67f24f8;
+  padding: 5px;
+  transition: 1s;
+}
+
+.navbar-header p svg {
+  margin-left: 15px;
+  margin-top: 15px;
+  cursor: pointer;
+  height: auto;
+}
+
+.nav-mobile {
+  height: 60vh;
+  margin-top: 30px;
+  animation: rotateX 500ms ease-in-out forwards;
+  transform-origin: top center;
+  margin-top: 10px;
+  transition: 1s;
+  overflow-y: scroll;
+}
+
+@keyframes rotateX {
+  0% {
+    opacity: 0;
+    transform: rotateX(-90deg);
+  }
+  50% {
+    transform: rotateX(-50deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotateX(0deg);
+  }
+}
+
+.nav-mobile ul li svg {
+  margin-right: 10px;
+}
+
+.nav-mobile ul li {
+  color: white;
+  cursor: pointer;
+  text-decoration: none;
+  list-style-type: none;
+  margin: 35px;
+}
+
+.nav-mobile ul li a {
+  text-decoration: none;
+}
+
+.nav-item-mobile .active {
+  color: rgb(88, 112, 39);
+}
+
+@media (min-width: 1023px) {
+  .navbar-mobileView {
+    display: none;
+  }
+}
