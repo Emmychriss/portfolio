@@ -21,25 +21,10 @@
 .nav-mobile {
   height: 60vh;
   margin-top: 30px;
-  animation: rotateX 500ms ease-in-out forwards;
   transform-origin: top center;
   margin-top: 10px;
   transition: 1s;
   overflow-y: scroll;
-}
-
-@keyframes rotateX {
-  0% {
-    opacity: 0;
-    transform: rotateX(-90deg);
-  }
-  50% {
-    transform: rotateX(-50deg);
-  }
-  100% {
-    opacity: 1;
-    transform: rotateX(0deg);
-  }
 }
 
 .nav-mobile ul li svg {
@@ -52,6 +37,24 @@
   text-decoration: none;
   list-style-type: none;
   margin: 35px;
+  transform-origin: top;
+  animation: translateX 350ms ease-in-out forwards;
+}
+
+@keyframes translateX {
+  0% {
+    opacity: 0;
+    transform: translateX(90px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
 }
 
 .nav-mobile ul li a {
@@ -63,7 +66,7 @@
 }
 
 @media (min-width: 1023px) {
-  .navbar-mobileView {
+  nav {
     display: none;
   }
 }
