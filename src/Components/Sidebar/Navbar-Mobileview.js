@@ -24,10 +24,12 @@ const NavbarMobileView = () => {
 
   return (
     <>
-      <header className="container-fluid navbar-header">
-        <p>
-          <GiHamburgerMenu size={25} onClick={toggleNavHandler} />
-        </p>
+      <nav className="container-fluid navbar-header">
+        <header>
+          <p>
+            <GiHamburgerMenu size={30} onClick={toggleNavHandler} />
+          </p>
+        </header>
 
         {showNavbarmobile && (
           <div className="nav-mobile">
@@ -123,7 +125,7 @@ const NavbarMobileView = () => {
             </ul>
           </div>
         )}
-      </header>
+      </nav>
     </>
   );
 };
