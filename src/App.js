@@ -1,5 +1,8 @@
 import "./App.css";
 
+import { useState, createContext } from "react";
+import ScrollToTop from "react-scroll-to-top";
+
 import Sidebar from "../src/Components/Sidebar/Sidebar";
 import About from "./Components/About/About";
 import TechStack from "./Components/TechStack/TechStack";
@@ -10,30 +13,40 @@ import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
 import NavbarMobileView from "./Components/Sidebar/Navbar-Mobileview";
 
-import ScrollToTop from "react-scroll-to-top";
+export const ThemeContext = createContext(null);
 
 function App() {
+  const [theme, setTheme] = useState("light");
+
+  const changeThemeHandler = () => {
+    setTheme((prev) => (prev === "light" ? "dark" : "light"));
+  };
+
   return (
-    <div className="App">
-      <NavbarMobileView />
+    <ThemeContext.Provider value={{ theme, changeThemeHandler }}>
+      <div className="App">
+        <div id={theme}>
+          <NavbarMobileView />
 
-      <Sidebar />
-      <About />
-      <WorkExperience />
-      <TechStack />
-      <Education />
-      <Project />
-      <Testimonial />
-      <Contact />
+          <Sidebar theme={theme} changeTheme={changeThemeHandler} />
+          <About />
+          <WorkExperience />
+          <TechStack />
+          <Education />
+          <Project />
+          <Testimonial />
+          <Contact />
+        </div>
 
-      <ScrollToTop
-        smooth="true"
-        height="20"
-        width="20"
-        color="white"
-        style={{ backgroundColor: "#282828" }}
-      />
-    </div>
+        <ScrollToTop
+          smooth="true"
+          height="20"
+          width="20"
+          color="white"
+          style={{ backgroundColor: "#282828" }}
+        />
+      </div>
+    </ThemeContext.Provider>
   );
 }
 
