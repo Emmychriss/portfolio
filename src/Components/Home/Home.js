@@ -2,9 +2,19 @@ import "./Home.css";
 import Typewritter from "typewriter-effect";
 import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf";
 
-const Home = () => {
+import { WiMoonAltThirdQuarter, WiMoonAltFirstQuarter } from "react-icons/wi";
+
+const Home = (props) => {
   return (
     <div className="container-fluid home" id="home">
+      <div className="themeChange" onClick={props.changeTheme}>
+        {props.theme === "light" ? (
+          <WiMoonAltThirdQuarter size={40} />
+        ) : (
+          <WiMoonAltFirstQuarter size={40} />
+        )}
+      </div>
+
       <div className="container home-content">
         <h1>Hi, I'm a </h1>
         <h2>
