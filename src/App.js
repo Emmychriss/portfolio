@@ -36,7 +36,7 @@ function App() {
           <Project />
           <Testimonial />
           <Contact />
-        </div>
+
 
         <ScrollToTop
           smooth="true"
@@ -45,6 +45,8 @@ function App() {
           color="white"
           style={{ backgroundColor: "#282828" }}
         />
+        </div>
+
       </div>
     </ThemeContext.Provider>
   );
