@@ -11,7 +11,7 @@ const Contact = () => {
         <span className="line"></span>
       </div>
 
-      <div className="row">
+      <div className="row img-and-form">
         <div className="col-xl-5 col-lg-5 col-md-5 col-sm-5">
           <div className="contact-form-image">
             <img src={comtactFormImage} alt="contact-form Pic"></img>
