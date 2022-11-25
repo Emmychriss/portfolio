@@ -18,6 +18,11 @@
   box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
 }
 
+#dark .techStack-content {
+  background-color: #4a235a;
+  transition: 1s;
+}
+
 .techStack-content p {
   text-align: center;
   margin-top: 20px;
