@@ -9,6 +9,11 @@
   box-shadow: 1px 1px 12px 1px rgba(0, 0, 0, 0.4);
 }
 
+#dark .projectList {
+  background-color: #4a235a;
+  transition: 1s;
+}
+
 .projectList:hover {
   border-left: 5px solid #616a6b;
   cursor: pointer;
