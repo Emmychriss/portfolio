@@ -37,16 +37,14 @@ function App() {
           <Testimonial />
           <Contact />
 
-
-        <ScrollToTop
-          smooth="true"
-          height="20"
-          width="20"
-          color="white"
-          style={{ backgroundColor: "#282828" }}
-        />
+          <ScrollToTop
+            smooth="true"
+            height="20"
+            width="20"
+            color="white"
+            style={{ backgroundColor: "#282828" }}
+          />
         </div>
-
       </div>
     </ThemeContext.Provider>
   );
