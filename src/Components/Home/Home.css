@@ -87,4 +87,8 @@
   .home {
     margin-left: 0;
   }
+
+  .themeChange {
+    display: none;
+  }
 }
