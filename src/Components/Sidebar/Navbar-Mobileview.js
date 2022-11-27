@@ -14,8 +14,9 @@ import {
 import { GiHamburgerMenu } from "react-icons/gi";
 
 import { Link } from "react-scroll";
+import Switch from "react-switch";
 
-const NavbarMobileView = () => {
+const NavbarMobileView = (props) => {
   const [showNavbarmobile, setshowNavbarmobile] = useState(false);
 
   const toggleNavHandler = () => {
@@ -29,6 +30,13 @@ const NavbarMobileView = () => {
           <p>
             <GiHamburgerMenu size={30} onClick={toggleNavHandler} />
           </p>
+
+          <div className="toggleSwitch">
+            <Switch
+              onChange={props.changeTheme}
+              checked={props.theme === "light"}
+            />
+          </div>
         </header>
 
         {showNavbarmobile && (
