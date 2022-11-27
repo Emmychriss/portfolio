@@ -26,7 +26,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, changeThemeHandler }}>
       <div className="App">
         <div id={theme}>
-          <NavbarMobileView />
+          <NavbarMobileView theme={theme} changeTheme={changeThemeHandler} />
 
           <Sidebar theme={theme} changeTheme={changeThemeHandler} />
           <About />
