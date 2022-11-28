@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./TechStack.css";
+import { Fade } from "react-reveal";
 
 const TechStack = () => {
   const data = [
@@ -52,9 +53,7 @@ const TechStack = () => {
       color: "#AF7AC5",
     },
   ];
-
   const [loadMoreTechStack, setLoadMoreTechStack] = useState(6);
-
   const loadMore = () => {
     setLoadMoreTechStack((prev) => prev + 3);
   };
@@ -69,17 +68,19 @@ const TechStack = () => {
       <div className="row">
         {data.slice(0, loadMoreTechStack).map((item, index, arr) => {
           return (
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
-              <div className="techStack-content">
-                <span
-                  className="techStack-number"
-                  style={{ backgroundColor: data[index].color }}
-                >
-                  {index + 1}
-                </span>
-                {<p>{item.name}</p>}
+            <Fade right>
+              <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12" key={index}>
+                <div className="techStack-content">
+                  <span
+                    className="techStack-number"
+                    style={{ backgroundColor: data[index].color }}
+                  >
+                    {index + 1}
+                  </span>
+                  {<p>{item.name}</p>}
+                </div>
               </div>
-            </div>
+            </Fade>
           );
         })}
       </div>
