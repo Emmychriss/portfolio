@@ -4,7 +4,6 @@ import "./Sidebar.css";
 import Home from "../Home/Home";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 import SidebarList from "./SidebarList";
-import { GiBowlingPropulsion } from "react-icons/gi";
 
 const Sidebar = (props) => {
   const [expandSidebar, setExpandSidebar] = useState(true);
