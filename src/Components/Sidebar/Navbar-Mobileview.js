@@ -12,7 +12,6 @@ import {
   FcContacts,
 } from "react-icons/fc";
 import { GiHamburgerMenu } from "react-icons/gi";
-
 import { Link } from "react-scroll";
 import Switch from "react-switch";
 
