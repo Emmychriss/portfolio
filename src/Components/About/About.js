@@ -1,6 +1,7 @@
 import "./About.css";
 
 import profilePic from "../../assets/Images/emmy.jpg";
+import Flip from "react-reveal/Flip";
 
 const About = () => {
   return (
@@ -14,10 +15,13 @@ const About = () => {
 
         <div className="col-xl-6 col-lg-6 col-md-12 col-sm-12">
           <div className="about-details">
-            <div className="about-title">
-              <h5>About Me</h5>
-              <span className="line"></span>
-            </div>
+            <Flip right>
+              <div className="about-title">
+                <h5>About Me</h5>
+                <span className="line"></span>
+              </div>
+            </Flip>
+
             <p>
               I'm a software engineer with fresh experience in developing web
               applications for specific use cases and a few months of training
