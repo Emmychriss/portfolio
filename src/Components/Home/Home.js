@@ -1,7 +1,7 @@
 import "./Home.css";
 import Typewritter from "typewriter-effect";
 import myCV from "../../assets/CV/Emmanuel_Nduka_CV.pdf";
-
+import { Link } from "react-scroll";
 import { WiMoonAltThirdQuarter, WiMoonAltFirstQuarter } from "react-icons/wi";
 import Fade from "react-reveal/Fade";
 
@@ -18,7 +18,7 @@ const Home = (props) => {
 
       <div className="container home-content">
         <Fade top>
-          <h1>Hi, I'm a </h1>
+          <h1>Hi I'm Emmanuel, a</h1>
           <h2>
             <Typewritter
               options={{
@@ -37,7 +37,15 @@ const Home = (props) => {
 
         <Fade bottom>
           <div className="action-button">
-            <div className="hire-me-btn">Hire Me</div>
+            <Link
+              spy={true}
+              smooth={true}
+              offset={-100}
+              duration={100}
+              to="contact"
+            >
+              <div className="hire-me-btn">Hire Me</div>
+            </Link>
             <div className="getResume-btn">
               <a href={myCV} download="Nduka_Emma_CV">
                 Get My Resume
