@@ -2,6 +2,7 @@ import "./About.css";
 
 import profilePic from "../../assets/Images/emmy.jpg";
 import Flip from "react-reveal/Flip";
+import Zoom from "react-reveal/Zoom";
 
 const About = () => {
   return (
@@ -22,15 +23,17 @@ const About = () => {
               </div>
             </Flip>
 
-            <p>
-              I'm a software engineer with fresh experience in developing web
-              applications for specific use cases and a few months of training
-              in a variety of domains and tech-stacks. I have significant
-              experience working with Javascript and frameworks like ReactJS,
-              jQuery, signalR framework and other languages. I'm a developer who
-              aspire to build the necessary skillset for the mastery of MERN
-              stack in my development career.
-            </p>
+            <Zoom right>
+              <p>
+                I'm a software engineer with fresh experience in developing web
+                applications for specific use cases and a few months of training
+                in a variety of domains and tech-stacks. I have significant
+                experience working with Javascript and frameworks like ReactJS,
+                jQuery, signalR framework and other languages. I'm a developer
+                who aspire to build the necessary skillset for the mastery of
+                MERN stack in my development career.
+              </p>
+            </Zoom>
           </div>
         </div>
       </div>
