@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./Sidebar.css";
 import Home from "../Home/Home";
 import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
-import SidebarList from "./SidebarList";
+import SidebarList from "./SidebarList/SidebarList";
 
 const Sidebar = (props) => {
   const [expandSidebar, setExpandSidebar] = useState(true);
