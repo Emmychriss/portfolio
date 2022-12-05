@@ -18,7 +18,7 @@ const Home = (props) => {
 
       <div className="container home-content">
         <Fade top>
-          <h1>Hi I'm Emmanuel, a</h1>
+          <h1>Hi I'm Emmanuel...</h1>
           <h2>
             <Typewritter
               options={{
