@@ -21,7 +21,7 @@ const Contact = () => {
           </div>
         </Fade>
 
-        <Fade right>
+        <Fade left>
           <div className="col-xl-7 col-lg-7 col-md-7 col-sm-7">
             <div className="contact-form-main">
               <div className="text-center">
