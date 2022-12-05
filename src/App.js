@@ -11,7 +11,7 @@ import WorkExperience from "./Components/WorkExperience/WorkExperience";
 import Education from "./Components/Education/Education";
 import Testimonial from "./Components/Testimonial/Testimonial";
 import Contact from "./Components/Contact/Contact";
-import NavbarMobileView from "./Components/Sidebar/Navbar-Mobileview";
+import NavbarMobileView from "./Components/Sidebar/NavbarMobile/Navbar-Mobileview";
 
 export const ThemeContext = createContext(null);
 
